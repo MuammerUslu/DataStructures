@@ -1,0 +1,107 @@
+# Visual Studio
+.vscode/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+[Bb]uild/
+[Ll]ogs/
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Windows-specific files
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# macOS-specific files
+.DS_Store
+
+# Rider
+.idea/
+*.sln.iml
+
+# Other IDEs
+*.pidb
+*.booproj
+*.opendb
+*.VC.db
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+*.DotSettings
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*.swo
+*.ilk
+*.pdb
+*.obj
+
+# Test Results
+TestResults/
+
+# Publish outputs
+out/
+
+# Global tools
+*.dotCover
+*.coverage
+*.coveragexml
+*.coverageresults
+
+# Database files
+*.mdf
+*.ldf
+
+# Runtime-generated files
+*.dbmdl
+*.jfm
+
+# Logs and lock files
+*.log
+*.lock.json
+
+# NCrunch
+.ncrunchproject
+*.ncrunchsolution
+
+# User-specific files
+*.rsuser
+*.suo
+*.csproj.user
+*.userprefs
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Backup files
+*.bak
+*.old
+*.orig
+*.pyc
+*.class
+
+# Rider's shared index
+.idea/.idea.modules
+.idea/**/.idea/**
+
+# Git-specific ignore
+!.gitignore
