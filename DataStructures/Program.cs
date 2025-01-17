@@ -4,17 +4,21 @@ using DataStructures.FindTwoNumbersthatAddUptoGivenValue;
 using DataStructures.MergeTwoArrays;
 using DataStructures.QuickSort;
 using DataStructure;
+using DataStructures.Problems.Array_of_Products_of_all_Elements;
+
+Console.WriteLine("Hello World!");
 
 #region Problems
 
 // MergeTwoArrays.Test();
 // FindTwoNumbersThatAddUptoGivenValue.Test();
+// Array_of_Products_of_all_Elements.Test();
 
 #endregion
 
 #region Algorithms
 
-QuickSort.Test();
+// QuickSort.Test();
 
 #endregion
 

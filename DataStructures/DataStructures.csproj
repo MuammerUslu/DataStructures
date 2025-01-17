@@ -10,7 +10,6 @@
     <ItemGroup>
       <Folder Include="Algorithms\" />
       <Folder Include="DataStructres\" />
-      <Folder Include="Problems\" />
     </ItemGroup>
 
 </Project>
