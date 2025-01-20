@@ -20,10 +20,10 @@ public class QueueArray<T>
     public void Enqueue(T t)
     {
         if (_count == _array.Length)
-            Resize();
-            
+            ResizeCircular();
+
+        _tail = (_tail + 1) % _array.Length;
         _array[_tail] = t;
-        _tail++;
         _count++;
     }
 
@@ -33,16 +33,25 @@ public class QueueArray<T>
             throw new InvalidOperationException("Queue is empty!");
         
         T t = _array[_head];
+        _array[_head] = default;
         _head = (_head + 1) % _array.Length;
         _count--;
-        
+
         return t;
     }
-
-    private void Resize()
+    
+    private void ResizeCircular()
     {
-        T[] arrayCopy = new T[_array.Length * 2];
-        Array.Copy(_array,arrayCopy,_count);
-        _array = arrayCopy;
+        int newCapacity = _array.Length * 2;
+        T[] newQueue = new T[newCapacity];
+
+        for (int i = 0; i < _count; i++)
+        {
+            newQueue[i] = _array[(_head + i) % _array.Length];
+        }
+
+        _array = newQueue;
+        _head = 0;
+        _tail = _count - 1;
     }
 }
