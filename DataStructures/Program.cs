@@ -5,6 +5,7 @@ using DataStructures.MergeTwoArrays;
 using DataStructures.QuickSort;
 using DataStructure;
 using DataStructures.Problems.Array_of_Products_of_all_Elements;
+using DataStructures.Problems.MaximumSumSubarray_Kadane_s_Algorithm;
 
 Console.WriteLine("Hello World!");
 
